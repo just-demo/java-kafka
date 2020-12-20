@@ -25,6 +25,7 @@ public class WordCount {
         props.put(BOOTSTRAP_SERVERS_CONFIG, SERVER);
         props.put(DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass());
         props.put(DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getClass());
+        props.put(CACHE_MAX_BYTES_BUFFERING_CONFIG, 0);
 
         final StreamsBuilder builder = new StreamsBuilder();
 
